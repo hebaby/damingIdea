@@ -1,0 +1,21 @@
+<!--miniprogram/pages/room/room.wxml-->
+<view class="room-container">
+    <view class="room-title">
+        {{roomInfo.roomTitle}}
+    </view>
+    <view class="room-host">
+        <image src="{{roomHost.avatarUrl}}" class="room-host_image"></image>
+        <view class="room-host_name">
+            {{roomHost.nickName}}
+        </view>
+    </view>
+    <view class="action-area">
+        <i-button bind:click="addGame" type="success">加入房间</i-button>
+    </view>
+    <view class="room-users">
+        <view class="room-users_item" wx:for="{{userList}}" wx:key="index">
+            <image src="{{item.avatarUrl}}" class="room-users_item_image"/>
+            <view class="room-users_item_name">{{item.nickName}}</view>
+        </view>
+    </view>
+</view>

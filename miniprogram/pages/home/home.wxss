@@ -1,0 +1,24 @@
+/* miniprogram/pages/home/home.wxss */
+.user-avatar {
+    margin-top: 150rpx;
+    margin-bottom: 50rpx;
+    text-align: center;
+}
+.user-avatar_image {
+    margin: 0 auto;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+}
+.user-avatar_name {
+    margin-top: 30rpx;
+    font-size: 50rpx;
+}
+
+.button-area {
+    margin-top: 300rpx;
+}
+.button-area_item {
+    margin-bottom: 30rpx;
+    width: 70%;
+}
