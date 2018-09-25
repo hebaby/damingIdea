@@ -21,6 +21,9 @@ Page({
       visible1: true
     })
   },
+  createRoom: function() {
+    wx.navigateTo({url: '../create/create'})
+  },
   handleOk: function() {
     console.log(this.data.value1);
     if(this.data.value1 !== '') {

@@ -6,7 +6,7 @@
 
 <view class="button-area">
   <button type="primary" class="button-area_item" bindtap="joinRoom">加入房间</button>
-  <button class="button-area_item">创建房间</button>
+  <button class="button-area_item" bindtap="createRoom">创建房间</button>
 </view>
 
 <i-modal title="标题" visible="{{ visible1 }}" bind:ok="handleOk" bind:cancel="handleCancel">

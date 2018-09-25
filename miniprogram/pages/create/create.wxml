@@ -1,2 +1,9 @@
 <!--miniprogram/pages/create/create.wxml-->
-<text>miniprogram/pages/create/create.wxml</text>
+<i-panel title="基础属性">
+    <i-input value="{{ value1 }}" title="名称" autofocus placeholder="名称" maxlength="50"/>
+    <i-input value="{{ value2 }}" type="textarea" title="简介" placeholder="请输入详细简介(最多50字)" maxlength="50" />
+</i-panel>
+
+<view class="submit-button">
+    <i-button bind:click="createRoom" type="success">建立房间</i-button>
+</view>

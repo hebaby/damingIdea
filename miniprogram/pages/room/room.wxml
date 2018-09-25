@@ -14,7 +14,7 @@
     </view>
     <view class="room-users">
         <view class="room-users_item" wx:for="{{userList}}" wx:key="index">
-            <image src="{{item.avatarUrl}}" class="room-users_item_image"/>
+            <image src="{{item.avatarUrl}}" class="room-users_item_image" mode="aspectFill"/>
             <view class="room-users_item_name">{{item.nickName}}</view>
         </view>
     </view>

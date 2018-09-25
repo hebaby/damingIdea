@@ -1,4 +1,7 @@
 // miniprogram/pages/create/create.js
+
+const db = wx.cloud.database();
+
 Page({
 
   /**
@@ -6,6 +9,23 @@ Page({
    */
   data: {
 
+  },
+
+  /**
+   * 创建房间
+   */
+  createRoom: function() {
+    wx.cloud.callFunction({
+      name: 'createRoom',
+      data: {
+        a: 1,
+        b: 2
+      },
+      success: function(res) {
+        console.log(res);
+      },
+      fail: console.error
+    })
   },
 
   /**

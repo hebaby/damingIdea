@@ -1,1 +1,6 @@
-{}
+{
+    "usingComponents": {
+        "i-input": "../../component/input/index",
+        "i-button": "../../component/button/index"
+    }
+}
